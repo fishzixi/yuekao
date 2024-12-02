@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1. 【字符串替换】编写一个函数，接收三个参数：
+        原字符串、待替换的子字符串以及替换后的子字符串。
+        函数应返回将原字符串中所有
+        待替换的子字符串替换为替换后的子字符串的结果。</p>
+</body>
+<script>
+    var str1 = "abcd";
+    var str2 = "a"
+    var str3 = "e";
+    var str4=replaceString(str1,str2,str3);
+    console.log (str4);
+
+    function replaceString(str,oldSub,newSub) {
+        return str.replace(oldSub,newSub )
+    }
+</script>
+</html>
