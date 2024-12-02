@@ -6,29 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <a href="js.html">首页</a>
 </body>
 <script>
-    var arr1 = [1,1,1,3,4,3,2];
-    console.log(repet(arr1));
-    function repet(arr) {
-        var arr2 =[];
+    var arr1 = [1,5,2,1,5,1];
+    console.log (f1(arr1));
+
+    function f1(arr){
+        var map = {};
+        // var con = 0;
         for (i=0;i<arr.length;i++){
-            var flag = false;
-            for (j=0;j<=arr2.length;j++){
-                if(arr2[j]===arr[i]){
-                    var flag=true;
-                    break;
-                }
-            }
-            if(!flag){
-                arr2.push(arr[i]);
-            }
-        }
-        return arr2;
+           var key = arr[i];
+           if(map[key]){
+            map[key]+=1;
+           }else{
+            map[key]=1;
+           }
+         
+            
+        }return map;
     }
-    
-
-
 </script>
 </html>
